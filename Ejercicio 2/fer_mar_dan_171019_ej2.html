@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Codificacion-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para que se adapte a culquier dispositivo-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comparativa-fermardan</title>
+    <style> 
+        .estilo{
+            text-align: center;
+        }
+        .video{
+            display: block;
+            margin: auto;
+        }
+        table{
+            border: 1px solid black ;
+            text-align: center;
+        }
+        td,th{
+            border: 1px solid black ;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="estilo">Fermardan-Comparativa de coches</h1>
+    <br>
+
+    <p class="estilo">Fermardan- Vamos a comparar estos coches:</p>
+    <br><br>
+
+    <ol>
+        <li>Skoda-fermardan-Superb</li>
+        <li>Skoda-fermardan-Kodiaq</li>
+        <li>Renault-fermardan-Zoe</li>
+        <li>Renault-fermardan-Espace</li>
+    </ol>
+    <br><br>
+
+    <video class="video" id="video1" width="300" height="300" autoplay="autoplay" controls loop="loop">
+        <source src="videos/SkodaSuperb.mp4" type="video/mp4">
+        <source src="videos/SkodaSuperb.ogv" type="video/ogv">
+        <source src="videos/SkodaSuperb.webm" type="video/webm"> 
+    </video>
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th> Modelos de coches</th>
+                <th>Skoda</th>
+                <th>Renault</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td></td>
+                <td>
+                    <img src="Recursos/SkodaSuperb.jpg" alt="coche1" id="coche1id">
+                </td>
+                <td>
+                    <img src="Recursos/SkodaKodiaq.jpg" alt="coche2id">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <img src="Recursos/RenaultZOE.jpg" alt="coche3" id="coche3id">
+                </td>
+                <td>
+                    <img src="Recursos/RenaultEspace.jpg" alt="coche4" id="coche4id">
+                </td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            
+        </tfoot>
+    </table>
+    <br><br>
+
+    <form name="formulario1" id="formulario1id" method="" action="">
+        <legend>Rellena los datos con tu modelo de coche favorito:</legend><br>
+        <label for="marcaid">Marca:</label><br>
+        <input type="text" id="marcaid" name="marca" size="100" placeholder="Introduce marca" required><br>
+        <label for="modeloid">Modelo:</label><br>
+        <input type="text" id="modeloid" name="modelo" size="100" placeholder="Introduce modelo" required><br>
+        <label for="cvid">CV:</label><br>
+        <input type="number" id="cvid" name="cv" size="100" placeholder="Introduce potencia" required><br>
+        <label for="colorid">Color favorito para el coche:</label><br>
+        <input type="color" id="colorid" name="color" size="100" required><br>
+        <label for="usuid">Identificador de usuario</label><br>
+        <input type="text" id="usuid" name="usuario" size="100" placeholder="Identificador"
+        pattern="[A-Z]{2}[0-9]{4}[a-z]{1}[0-9]{1}" maxlength="8" 
+        title="Debes introducir 2 letras mayúsculas,4 números, una letra minúscula y un número" required><br><br>
+        <input type="submit" id="enviarid" name="enviar" value="Enviar mis opiniones"><br>br
+
+        Gracias. Fichero de examen fer_mar_dan_17102019_ej2.html
+    </form>
+</body>
+</html>
